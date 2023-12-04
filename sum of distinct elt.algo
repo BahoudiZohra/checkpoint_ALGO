@@ -1,0 +1,35 @@
+ALGORITHM Sum_of_Distinct_ELT
+VAR
+    tab1, tab2 : ARRAY_OF_INTEGER[4];
+    sum: INTEGER:=0
+    i,j: INTEGER:=0
+BEGIN
+    //insertion des elements du tab1
+    FOR i FROM 0 TO tab1.length - 1 STEP 1  DO
+        read(tab1[i])
+    END_FOR
+
+    //insertion des elements du tab2
+    FOR j FROM 0 TO tab2.length - 1 STEP 1  DO
+        read(tab[j])
+    END_FOR
+
+   // Identification des nombres distincts
+   WHILE (i<= tab1.length-1) DO
+   WHILE (j<= tab2.length-1) DO
+    IF (tab1[i] = tab2[j]) THEN
+        break;
+   
+    ELSE_IF (j= tab2.length-1) THEN
+       sum:= sum + tab1[i]
+       
+    ELSE
+    j++
+    END_IF
+
+   END_WHILE
+    i++
+   END_WHILE
+
+   write ("the sum of distinct element is :" sum)
+END

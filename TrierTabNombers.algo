@@ -1,0 +1,21 @@
+ALGORITHM Trier_Tab_Nombres
+VAR
+     tab : ARRAY_OF_INTEGER[5];
+    temp: INTEGER:=0
+    i,j: INTEGER:=0
+BEGIN
+    tab:[7,5,-3,9,0]  //insert the elements directly in array
+    FOR i FROM 0 TO tab.length-1 STEP 1  DO
+    FOR j FROM i+1 TO tab.length-1 STEP 1 DO
+        if(tab[j]<tab[i]) THEN
+            temp:=tab[i]
+            tab[i]:=tab[j]
+            tab[j]:=temp
+        ELSE
+            break;
+
+        END_IF
+    END_FOR
+    END_FOR
+    
+END
